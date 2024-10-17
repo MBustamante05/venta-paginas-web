@@ -1,0 +1,190 @@
+//Font logo
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap");
+// Colores
+$dark-blue-green: #193559;
+$dark-green: #225473;
+$green-blue: #11768c;
+$cyan: #3fa6a6;
+$light-yellow: #f2de77;
+$dark-ocean: #082942;
+$white: #f7ffff;
+
+section {
+  width: 100dw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+h1,
+h2 {
+  font-family: "Londrina Sketch", sans-serif;
+}
+// Primera sección
+section.first-section {
+  background-image: url(src/background_blue.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .sections {
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  nav {
+    background-color: #002942bc;
+    a.logo {
+      font-family: "Londrina Sketch", sans-serif;
+    }
+    .sections a {
+      transition: all 0.3s;
+    }
+    .sections a:hover {
+      background-color: $white;
+      color: #111;
+      border-radius: 50px;
+    }
+  }
+  // Main content
+  .main {
+    color: $white;
+    margin: 10rem auto;
+    button {
+      border: none;
+      color: #fff;
+      transition: all 0.3s;
+    }
+    button:first-child {
+      background-color: $cyan;
+    }
+    button:first-child:hover {
+      background-color: #3c9f9f;
+    }
+    button:last-child {
+      // background-color: #f2de77b8;
+      background-color: #f2de7727;
+      border: 1px solid #f2de77b8;
+    }
+    button:last-child:hover {
+      background-color: #decb6db8;
+    }
+  }
+  footer {
+    color: #ccc;
+  }
+}
+// Segunda sección
+section.second-section {
+  background: $dark-ocean;
+  .container {
+    .intro {
+      color: #fff;
+    }
+    .card-title {
+      color: #fff;
+    }
+    .card {
+      transition: all 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.1);
+      z-index: 1;
+    }
+    .cards {
+      margin: 10px 0;
+      padding: 10px 50px;
+      display: flex;
+      flex-direction: column; //Alineación vertical
+      align-items: flex-start;
+    }
+    .card {
+      color: #fff;
+    }
+    .card1 {
+      background-color: $cyan;
+      color: #fff;
+      box-shadow: 5px 5px 1px #1b8c84;
+    }
+    .card2 {
+      align-self: flex-end;
+      background-color: $light-yellow;
+      box-shadow: 5px 5px 1px #a4ac58;
+    }
+    .card3 {
+      align-self: center;
+      background-color: #21639B;
+      box-shadow: 5px 5px 1px #185A95;
+    }
+  }
+}
+// Tercera sección
+section.third-section {
+  background-color: #1d3c56;
+  footer {
+    color: #ccc;
+    text-decoration: underline;
+  }
+}
+// Cuarta sección
+section.four-section {
+  background-color: $dark-ocean;
+  form {
+    color: #dfdede;
+  }
+}
+section.fifth-section {
+  background-color: #1d3c56;
+  footer {
+    position: relative;
+    bottom: 0;
+    background: #152c3f;
+    i {
+      cursor: pointer;
+    }
+    h5 {
+      color: $cyan;
+    }
+  }
+  .juego {
+    img {
+      width: 100px;
+      padding: 10px;
+      border-radius: 20px;
+    }
+    .choices {
+      img {
+        cursor: pointer;
+        background: $cyan;
+        transition: all 0.3s;
+      }
+      img:hover {
+        background: #178098;
+      }
+    }
+    #bot-choice{
+      display: none;
+      img{
+        background-color: $light-yellow;
+      }
+    }
+    #message-div{
+      display: none;
+      background-color: #c1fde999;
+      transition: all 1;
+    }
+  }
+}
+
+//Más responsive
+@media screen and (max-width: 850px) {
+  section.fifth-section{
+    .juego{
+      
+    img {
+      width: 70px;
+      padding: 10px;
+      border-radius: 20px;
+    }
+    }
+  }
+}

@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap");
+section {
+  width: 100dw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  font-family: "Londrina Sketch", sans-serif;
+}
+
+section.first-section {
+  background-image: url(src/background_blue.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+section.first-section .sections {
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+}
+section.first-section nav {
+  background-color: rgba(0, 41, 66, 0.737254902);
+}
+section.first-section nav a.logo {
+  font-family: "Londrina Sketch", sans-serif;
+}
+section.first-section nav .sections a {
+  transition: all 0.3s;
+}
+section.first-section nav .sections a:hover {
+  background-color: #f7ffff;
+  color: #111;
+  border-radius: 50px;
+}
+section.first-section .main {
+  color: #f7ffff;
+  margin: 10rem auto;
+}
+section.first-section .main button {
+  border: none;
+  color: #fff;
+  transition: all 0.3s;
+}
+section.first-section .main button:first-child {
+  background-color: #3fa6a6;
+}
+section.first-section .main button:first-child:hover {
+  background-color: #3c9f9f;
+}
+section.first-section .main button:last-child {
+  background-color: rgba(242, 222, 119, 0.1529411765);
+  border: 1px solid rgba(242, 222, 119, 0.7215686275);
+}
+section.first-section .main button:last-child:hover {
+  background-color: rgba(222, 203, 109, 0.7215686275);
+}
+section.first-section footer {
+  color: #ccc;
+}
+
+section.second-section {
+  background: #082942;
+}
+section.second-section .container .intro {
+  color: #fff;
+}
+section.second-section .container .card-title {
+  color: #fff;
+}
+section.second-section .container .card {
+  transition: all 0.3s;
+}
+section.second-section .container .card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+section.second-section .container .cards {
+  margin: 10px 0;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+section.second-section .container .card {
+  color: #fff;
+}
+section.second-section .container .card1 {
+  background-color: #3fa6a6;
+  color: #fff;
+  box-shadow: 5px 5px 1px #1b8c84;
+}
+section.second-section .container .card2 {
+  align-self: flex-end;
+  background-color: #f2de77;
+  box-shadow: 5px 5px 1px #a4ac58;
+}
+section.second-section .container .card3 {
+  align-self: center;
+  background-color: #21639B;
+  box-shadow: 5px 5px 1px #185A95;
+}
+
+section.third-section {
+  background-color: #1d3c56;
+}
+section.third-section footer {
+  color: #ccc;
+  text-decoration: underline;
+}
+
+section.four-section {
+  background-color: #082942;
+}
+section.four-section form {
+  color: #dfdede;
+}
+
+section.fifth-section {
+  background-color: #1d3c56;
+}
+section.fifth-section footer {
+  position: relative;
+  bottom: 0;
+  background: #152c3f;
+}
+section.fifth-section footer i {
+  cursor: pointer;
+}
+section.fifth-section footer h5 {
+  color: #3fa6a6;
+}
+section.fifth-section .juego img {
+  width: 100px;
+  padding: 10px;
+  border-radius: 20px;
+}
+section.fifth-section .juego .choices img {
+  cursor: pointer;
+  background: #3fa6a6;
+  transition: all 0.3s;
+}
+section.fifth-section .juego .choices img:hover {
+  background: #178098;
+}
+section.fifth-section .juego #bot-choice {
+  display: none;
+}
+section.fifth-section .juego #bot-choice img {
+  background-color: #f2de77;
+}
+section.fifth-section .juego #message-div {
+  display: none;
+  background-color: rgba(193, 253, 233, 0.6);
+  transition: all 1;
+}
+
+@media screen and (max-width: 850px) {
+  section.fifth-section .juego img {
+    width: 70px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
