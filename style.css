@@ -17,6 +17,9 @@ section.first-section {
   background-size: cover;
   background-attachment: fixed;
 }
+section.first-section .landing {
+  font-size: 1.1rem;
+}
 section.first-section .sections {
   text-align: center;
   justify-content: center;
